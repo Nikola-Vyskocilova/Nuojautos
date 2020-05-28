@@ -224,12 +224,61 @@ a:hover {
 }
 
 /*scroll down*/
+.arrow{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid #B7A69F;
+    border-right: 5px solid #B7A69F;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
 
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
 
+#topBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    -webkit-box-shadow: 0px 4px 10px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 10px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 10px -2px rgba(0,0,0,0.75);
+    z-index: 99;
 
-
-
-
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background-color: var(--white);
+    cursor: pointer;
+    font-size: 18px;
+    margin: 30px 0px;
+    display: none;
+    transition: .5s;
+}
+#topBtn:hover{
+    filter: invert(100%);
+}
 /*
 
 .footer .footer-bottom {
