@@ -275,6 +275,52 @@ li a:hover{
 
 }
 
+@media only screen and (max-width: 600px) {
+        footer{
+    padding-top: 30px;
+    border-top: 2px solid lightgray;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+    form {
+   grid-column-start: 1;
+    grid-row-start: 1;
+    justify-items: center;
+        width:80%;
+}
+    .newsletter{
+    text-align: center;
+    padding-right: 60px;
+
+}
+
+    input[type=text]  {
+  width: 35%;
+}
+input[type=submit]{
+    width: 30%;
+
+}
+
+.navigation{
+
+     padding-top: 60px;
+    grid-column-start: 1;
+    display: grid;
+    grid-row-start: 3;
+    text-align: center;
+    justify-items: center;
+}
+    li{
+    padding-left:0px;
+
+}
+    li a{
+  padding-top: 15px;
+}
+}
+
 
 
 
