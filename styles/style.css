@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
 body {
     font-family: "Work sans", sans-serif;
     margin: 0;
@@ -10,6 +12,7 @@ nav {
     background: white;
     overflow: auto;
     border-bottom: 2px solid lightgray;
+    position: fixed;
 }
 
 
@@ -60,12 +63,14 @@ a:hover {
 }
 
 .side_text {
-    transform: rotate(90deg);
+    font-size: 1em;
+    transform: rotate(270deg);
     transform-origin: left top 0;
     padding: 9px;
-    margin: 10px 0px 0px 30px;
+    bottom: 0;
     color: gray;
-
+    position: fixed;
+    margin: 0;
 }
 
 .grid-wrapper {
@@ -190,16 +195,97 @@ a:hover {
     background-color: black;
 }
 
+/** main page*/
 
+.title {
 
+	font-family:  "Work sans", sans-serif;
+	text-align: center;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	letter-spacing: 1px;
+}
 
+.title h1 {
+/*	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);*/
+	background-image: url(../images/giphy.gif);
+    background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	font-size: 120px;
+	line-height: .75;
+	margin: 10px 0;
+}
 
+/*scroll down*/
+.arrow{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid #B7A69F;
+    border-right: 5px solid #B7A69F;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
 
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
 
+#topBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    -webkit-box-shadow: 0px 4px 10px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 10px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 10px -2px rgba(0,0,0,0.75);
+    z-index: 99;
 
-
-
-
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background-color: var(--white);
+    cursor: pointer;
+    font-size: 18px;
+    margin: 30px 0px;
+    display: none;
+    transition: .5s;
+}
+#topBtn:hover{
+    filter: invert(100%);
+}
+.collections_container {
+    margin: 1em;
+    justify-content: center;
+    background-color: #B7A5A0;
+}
+.collections_container h2 {
+    color: white;
+}
 /*
 
 .footer .footer-bottom {
