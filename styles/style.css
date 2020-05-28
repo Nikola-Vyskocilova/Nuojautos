@@ -71,7 +71,6 @@ a:hover {
     color: gray;
     position: fixed;
     margin: 0;
-
 }
 
 .grid-wrapper {
@@ -278,6 +277,14 @@ a:hover {
 }
 #topBtn:hover{
     filter: invert(100%);
+}
+.collections_container {
+    margin: 1em;
+    justify-content: center;
+    background-color: #B7A5A0;
+}
+.collections_container h2 {
+    color: white;
 }
 /*
 
