@@ -12,7 +12,7 @@
 
     <nav>
         <div class="nav-bar-left">
-            <a class="home_btn" href="#home">nuojautos.</a>
+            <a class="home_btn" href="index.html">nuojautos.</a>
         </div>
         <ul class="nav-bar-right">
             <li><a href="Store.html">Store</a></li>
@@ -31,21 +31,37 @@
         <span></span>
     </div>
 
-    <video id="myVideo" width="100%" height="auto" controls autoplay>
-        <source src="images/video_nuojautos.mp4"></video>
+    <video controls id="myVideo" width="100%" height="auto" preload="auto" loop autoplay>
+        <source src="images/video_nuojautos.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
     <div class="arrow">
         <span></span>
     </div>
-    <div class="collections_container">
-    <H2> T-shirts led by our intuition, created with pure love </H2>
-  <h3> our collections </h3>
+    <div class="collections">
+        <h2> T-shirts led by our intuition, created with pure love </h2>
+        <h3> our collections </h3>
+        <div class="collections_container">
+        </div>
+
     </div>
+
+    <template>
+        <div class="collection-box">
+            <img class="collection-img">
+            <h1 class="year_text">Years</h1>
+            <h2 class="name_text">CollectionName</h2>
+            <h3 class="upsidown_text">UpsidownText</h3>
+        </div>
+    </template>
 
     <script src="scripts/script.js">
     </script>
     <script src="scripts/script2.js">
     </script>
-</body></html>
+</body>
+
+</html>
 <link rel="stylesheet" href="styles/style.css">
 <script src="styles/style.css"></script>

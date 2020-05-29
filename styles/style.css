@@ -12,7 +12,6 @@ nav {
     background: white;
     overflow: auto;
     border-bottom: 2px solid lightgray;
-    position: fixed;
 }
 
 
@@ -278,13 +277,28 @@ a:hover {
 #topBtn:hover{
     filter: invert(100%);
 }
-.collections_container {
-    margin: 1em;
+
+.collections {
     justify-content: center;
     background-color: #B7A5A0;
 }
-.collections_container h2 {
+.collections h1, h2, h3{
     color: white;
+}
+
+.collections_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.collection-box {
+    text-align: center;
+    margin: auto;
+}
+
+.collection-box img {
+    object-fit: cover;
+    width: 95%;
+    height: 400px;
 }
 /*
 
