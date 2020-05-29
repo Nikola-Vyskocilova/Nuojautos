@@ -416,18 +416,18 @@ footer{
 .navigation{
     grid-column-start: 1;
 }
-li{
+.footer_li {
     grid-column-start: 1;
     list-style: none;
     padding-left: 60px;
     width:30%;
 }
 
-li a{
+.footer_li a{
   text-decoration: none;
   color: black;
 }
-li a:hover{
+.footer_li a:hover{
     text-decoration: underline;
 }
 
