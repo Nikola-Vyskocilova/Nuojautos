@@ -286,6 +286,11 @@ a:hover {
 .collections_container h2 {
     color: white;
 }
+/*FAQPage................*/
+.faq_container h3 {
+    font-size: 1em;
+    margin: 10% 20% 10% 20%;
+}
 /*
 
 .footer .footer-bottom {
