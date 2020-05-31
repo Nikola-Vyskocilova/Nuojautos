@@ -286,6 +286,11 @@ a:hover {
 .collections {
     background-color: #B7A5A0;
     text-align: center;
+    margin: auto;
+}
+.left {
+    width: 5%;
+    float: left;
 }
 
 .collections h1,
@@ -348,6 +353,13 @@ padding-top: 20px;
 
 .mirror_text p {
     margin:0em;
+}
+
+.collections_side_text {
+    font-size: 2em;
+    transform: rotate(270deg);
+    margin-top: 10%;
+
 }
 
 /*
