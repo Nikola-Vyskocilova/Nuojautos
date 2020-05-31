@@ -13,9 +13,13 @@ function createCollectionSections(collection) {
     const copy = template.cloneNode(true);
 
     copy.querySelector(".year_text").innerHTML = collection.year;
-    copy.querySelector(".name_text").innerHTML = collection.name;
-    copy.querySelector(".upsidown_text").innerHTML = collection.name;
+    copy.querySelector(".name_text").innerHTML = collection.name + ".";
+    copy.querySelector(".upsidown_text").innerHTML = collection.name + ".";
+    //copy.querySelector(".centeredCollectionText").innerHTML = collection.year + "<br>" + collection.name + "<br>" + collection.name;
     copy.querySelector(".collection-img").src = collection.collection_hover_image.guid;
+    const a = document.createElement("a");
+    a.href = "Store.html#" + collection.slug;
+    copy.querySelector(".collection-box").appendChild(a);
     document.querySelector(".collections_container").appendChild(copy);
 
 }
