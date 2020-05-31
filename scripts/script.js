@@ -24,6 +24,7 @@ function createCollectionSections(collection) {
 
     const collectionImageDiv = document.createElement("DIV");
     collectionImageDiv.classList.add("collectionImage");
+    collectionImageDiv.setAttribute("id", collection.slug);
 
     const centeredText = document.createElement("DIV");
     centeredText.classList.add("centeredText");

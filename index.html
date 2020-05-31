@@ -31,16 +31,35 @@
         <span></span>
     </div>
 
-    <video id="myVideo" width="100%" height="auto" controls autoplay>
-        <source src="images/video_nuojautos.mp4"></video>
+    <video controls id="myVideo" width="100%" height="auto" preload="auto" loop autoplay>
+        <source src="images/video_nuojautos.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
     <div class="arrow">
         <span></span>
     </div>
-    <div class="collections_container">
-    <H2> T-shirts led by our intuition, created with pure love </H2>
-  <h3> our collections </h3>
+    <div class="collections">
+        <h2> T-shirts led by our intuition, created with pure love </h2>
+        <div class="collections_side_text left"> our collections (Fix this please) </div>
+        <div class="collections_container right">
+        </div>
+
     </div>
+
+    <template>
+        <div class="collection-box">
+            <img class="collection-img">
+            <div class="centeredCollectionText">
+                <h1 class="year_text">Years</h1>
+                <div class="mirror_text">
+                    <p class="name_text">CollectionName</p>
+                    <p class="upsidown_text">UpsidownText</p>
+                </div>
+            </div>
+        </div>
+    </template>
+
     <footer>
         <section class="navigation">
          <li class="footer_li">
@@ -86,6 +105,8 @@
     </script>
     <script src="scripts/script2.js">
     </script>
-</body></html>
+</body>
+
+</html>
 <link rel="stylesheet" href="styles/style.css">
 <script src="styles/style.css"></script>
