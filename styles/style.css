@@ -512,3 +512,40 @@ input[type=submit]{
     margin-left: 20vw;
     margin-right: 20vw; 
 }
+
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+
+}
+
+.picture1{
+    grid-column-start: 1;
+}
+
+.text1{
+   grid-column-start: 2;
+    display: block;
+}
+
+.red{
+    color: red;
+}
+.picture2{
+   grid-column-start: 2;
+    display: block;
+    padding-top: 50px;
+}
+.text2{
+    grid-column-start: 1;
+    padding-top: 50px;
+}
+.text3{
+    grid-column-start: 1;
+    padding-top: 30px;
+}
+.text4{
+  grid-column-start: 2;
+    padding-top: 50px;
+}
