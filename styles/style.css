@@ -622,15 +622,12 @@ input[type=submit]{
     margin-right: 20vw; 
 }
 
-<<<<<<< HEAD
+
 
 .picture1{
     align-content: center;
 }
 
-.text1{
-
-=======
 .about{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -644,7 +641,7 @@ input[type=submit]{
 
 .text1{
    grid-column-start: 2;
->>>>>>> development
+
     display: block;
 }
 
@@ -652,7 +649,6 @@ input[type=submit]{
     color: red;
 }
 .picture2{
-<<<<<<< HEAD
     display: block;
 
 }
@@ -664,7 +660,7 @@ input[type=submit]{
 }
 .three{
     padding-left: 20px;
-=======
+
    grid-column-start: 2;
     display: block;
     padding-top: 50px;
@@ -680,5 +676,5 @@ input[type=submit]{
 .text4{
   grid-column-start: 2;
     padding-top: 50px;
->>>>>>> development
+
 }
