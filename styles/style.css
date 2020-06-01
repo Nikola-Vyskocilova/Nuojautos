@@ -122,7 +122,7 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: black;
     font-size: 25px;
 }
 
@@ -131,7 +131,7 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: black;
     font-size: 13px;
     font-weight: lighter;
 
@@ -239,7 +239,7 @@ a:hover {
 h2,
 h3 {
 padding-top: 20px;
-    color: white;
+    color: black;
 }
 
 .collections_container {
@@ -281,7 +281,7 @@ padding-top: 20px;
 .name_text {
     font-size: 30px;
     font-weight: 100;
-    color: white;
+    color: black;
 }
 
 .upsidown_text {
@@ -516,17 +516,22 @@ input[type=submit]{
 .about{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 50px;
+    padding-top: 50px;
 
 }
 
 .picture1{
     grid-column-start: 1;
+    align-content: center;
+    padding-left:60px;
 }
 
 .text1{
    grid-column-start: 2;
+    grid-column-end: 2;
     display: block;
+    padding-top: 120px;
+    padding-left: 90px;
 }
 
 .red{
@@ -536,16 +541,30 @@ input[type=submit]{
    grid-column-start: 2;
     display: block;
     padding-top: 50px;
+
 }
 .text2{
     grid-column-start: 1;
-    padding-top: 50px;
+    grid-row-start: 2;
+    padding-top: 130px;
+    width:220px;
+    padding-left: 200px;
 }
 .text3{
     grid-column-start: 1;
-    padding-top: 30px;
+    padding-top: 10px;
+    padding-left: 200px;
 }
 .text4{
   grid-column-start: 2;
-    padding-top: 50px;
+    padding-top: 100px;
+    width:280px;
+    padding-left: 150px;
+}
+
+.two{
+    padding-left: 10px;
+}
+.three{
+    padding-left: 20px;
 }
