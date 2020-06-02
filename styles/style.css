@@ -474,6 +474,7 @@ a:hover {
 .sensesText {
     max-width: 50vW;
     text-align: center;
+    padding-left: 25vw;
 }
 /**footer*/
 
