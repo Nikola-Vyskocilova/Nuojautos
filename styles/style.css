@@ -14,7 +14,6 @@ nav {
     border-bottom: 2px solid lightgray;
 }
 
-
 li {
     float: left;
 }
@@ -152,7 +151,7 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: black;
     font-size: 25px;
 }
 
@@ -161,7 +160,7 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: black;
     font-size: 13px;
     font-weight: lighter;
 
@@ -172,7 +171,7 @@ a:hover {
 .title {
 
     font-family: "Work sans", sans-serif;
-    text-align: center;
+    text-align: left;
     color: #FFF;
     display: flex;
     flex-direction: column;
@@ -183,17 +182,16 @@ a:hover {
 }
 
 .title h1 {
-    /*	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);*/
-    background-image: url(../images/giphy.gif);
+    	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+/*    background-image: url(../images/giphy.gif);*/
     background-size: cover;
     color: transparent;
     -moz-background-clip: text;
     -webkit-background-clip: text;
-    font-size: 120px;
-    line-height: .75;
+    font-size: 100px;
+    line-height: .80;
     margin: 10px 0;
 }
-
 /*scroll down*/
 .arrow {
     position: absolute;
@@ -315,7 +313,7 @@ h3 {
 .name_text {
     font-size: 30px;
     font-weight: 100;
-    color: white;
+    color: black;
 }
 
 .upsidown_text {
@@ -425,6 +423,58 @@ footer {
     grid-area: column;
 }
 
+
+
+
+@media only screen and (min-width: 900px) {
+      .picture1{
+    grid-column-start: 1;
+    padding-left:60px;
+    width:700px;
+}
+    .returns {
+  padding-top: 15vh;
+}
+    .text1{
+   grid-column-start: 2;
+    grid-column-end: 2;
+    padding-top: 120px;
+    padding-left: 90px;
+}
+    .picture2{
+   grid-column-start: 2;
+    padding-top: 50px;
+    width:700px;
+
+}
+    .text2{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    padding-top: 130px;
+    width:220px;
+    padding-left: 200px;
+}
+    .text3{
+    grid-column-start: 1;
+    padding-top: 10px;
+    padding-left: 200px;
+}
+    .text4{
+  grid-column-start: 2;
+    padding-top: 100px;
+    width:280px;
+    padding-left: 150px;
+}
+    .about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 50px;
+
+}
+}
+
+
+
 @media only screen and (max-width: 600px) {
     footer {
         padding-top: 30px;
@@ -532,8 +582,6 @@ footer {
 
 .shirt_description {
     letter-spacing: 2px;
-    ;
-
 }
 
 
@@ -541,6 +589,62 @@ footer {
     color: black;
 }
 
+.about{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.returns{
+  padding-top: 0px;
+   text-align: center;  
+}
+
+.picture1{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    width:300px;
+    padding-left: 30px;
+
+
+}
+
+.text1{
+   grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    padding-top: 40px;
+    padding-left: 0px;
+    width:300px;
+
+    text-align: center;
+}
+
+.picture2{
+   grid-column-start: 1;
+    padding-top: 60px;
+     width:300px;
+    grid-row-start: 3;
+
+}
+.text2{
+    grid-column-start: 1;
+    grid-row-start: 4;
+    padding-top: 20px;
+    width:220px;
+    padding-left: 70px;
+}
+.text3{
+    grid-column-start: 1;
+    padding-left: 90px;
+    grid-row-start: 5;
+    padding-top: 20px;
+}
+.text4{
+  grid-column-start: 1;
+    grid-row-start: 6;
+    padding-top: 20px;
+    width:280px;
+    padding-left: 40px;
+}
 
 .buy_btn {
     width: 15%;
@@ -556,5 +660,67 @@ footer {
     display: block;
     width: 100%;
     font-weight: bold;
+
+}
+
+.FAQText {
+    margin-left: 20vw;
+    margin-right: 20vw; 
+}
+
+
+
+.picture1{
+    align-content: center;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+
+}
+
+.picture1{
+    grid-column-start: 1;
+}
+
+.text1{
+   grid-column-start: 2;
+
+    display: block;
+}
+
+.red{
+    color: red;
+}
+.picture2{
+    display: block;
+
+}
+
+
+
+.two{
+    padding-left: 10px;
+}
+.three{
+    padding-left: 20px;
+
+   grid-column-start: 2;
+    display: block;
+    padding-top: 50px;
+}
+.text2{
+    grid-column-start: 1;
+    padding-top: 50px;
+}
+.text3{
+    grid-column-start: 1;
+    padding-top: 30px;
+}
+.text4{
+  grid-column-start: 2;
+    padding-top: 50px;
 
 }
