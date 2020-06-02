@@ -151,7 +151,7 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
+    color: white;
     font-size: 25px;
 }
 
@@ -160,7 +160,7 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
+    color: white;
     font-size: 13px;
     font-weight: lighter;
 
@@ -169,8 +169,6 @@ a:hover {
 /** main page*/
 
 .title {
-
-    font-family: "Work sans", sans-serif;
     text-align: left;
     color: #FFF;
     display: flex;
@@ -182,8 +180,8 @@ a:hover {
 }
 
 .title h1 {
-    	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
-/*    background-image: url(../images/giphy.gif);*/
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    /*    background-image: url(../images/giphy.gif);*/
     background-size: cover;
     color: transparent;
     -moz-background-clip: text;
@@ -192,6 +190,7 @@ a:hover {
     line-height: .80;
     margin: 10px 0;
 }
+
 /*scroll down*/
 .arrow {
     position: absolute;
@@ -264,11 +263,9 @@ a:hover {
     float: left;
 }
 
-.collections h1,
-h2,
-h3 {
+.collections h2 h3 {
     padding-top: 20px;
-    color: black;
+    color: white;
 }
 
 .collections_container {
@@ -307,13 +304,13 @@ h3 {
 
 .year_text {
     font-size: 50px;
-
+    color: white;
 }
 
 .name_text {
     font-size: 30px;
     font-weight: 100;
-    color: black;
+    color: white;
 }
 
 .upsidown_text {
@@ -336,13 +333,91 @@ h3 {
 
 }
 
+
 /*
 /*FAQPage................*/
+
 .faq_container h3 {
     font-size: 1em;
     padding-top: 50px;
     margin: 10% 20% 10% 20%;
 }
+
+
+.FAQText {
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+/*About page*/
+.aboutHeader {
+    color:#707070;
+}
+
+.about_container {
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr 1fr;
+
+}
+
+.about_container h3 {
+
+}
+
+.container_item_1 {
+    display: flex;
+    margin: 0;
+}
+
+.picture_box {
+    width: 60%;
+    padding-left: 5em;
+}
+
+.moto1 {
+    flex-grow: 1;
+    padding-top: 6em;
+
+}
+.moto2{
+    flex-grow: 1;
+    padding-left: 4em;
+    padding-top: 6em;
+}
+
+.container_item_2 {
+
+}
+
+.picture_box img {
+    max-width: 90%;
+    height: auto;
+}
+.about_container h3 {
+    color: #707070;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.text1 {
+    padding-left: 5em;
+}
+.text2 {
+    float: right;
+    padding-right:7em;
+}
+
+.red {
+    color: red;
+}
+
+.tabbed {
+    padding-left: 1em;
+}
+.double_tabbed {
+    padding-left: 2em;
+}
+
 
 /**footer........*/
 
@@ -426,52 +501,57 @@ footer {
 
 
 
+/*
 @media only screen and (min-width: 900px) {
-      .picture1{
-    grid-column-start: 1;
-    padding-left:60px;
-    width:700px;
-}
-    .returns {
-  padding-top: 15vh;
-}
-    .text1{
-   grid-column-start: 2;
-    grid-column-end: 2;
-    padding-top: 120px;
-    padding-left: 90px;
-}
-    .picture2{
-   grid-column-start: 2;
-    padding-top: 50px;
-    width:700px;
+    .picture1 {
+        grid-column-start: 1;
+        padding-left: 60px;
+        width: 700px;
+    }
 
-}
-    .text2{
-    grid-column-start: 1;
-    grid-row-start: 2;
-    padding-top: 130px;
-    width:220px;
-    padding-left: 200px;
-}
-    .text3{
-    grid-column-start: 1;
-    padding-top: 10px;
-    padding-left: 200px;
-}
-    .text4{
-  grid-column-start: 2;
-    padding-top: 100px;
-    width:280px;
-    padding-left: 150px;
-}
-    .about{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 50px;
+    .text1 {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        padding-top: 120px;
+        padding-left: 90px;
+    }
 
+    .picture2 {
+        grid-column-start: 2;
+        padding-top: 50px;
+        width: 700px;
+
+    }
+
+    .text2 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        padding-top: 130px;
+        width: 220px;
+        padding-left: 200px;
+    }
+
+    .text3 {
+        grid-column-start: 1;
+        padding-top: 10px;
+        padding-left: 200px;
+    }
+
+    .text4 {
+        grid-column-start: 2;
+        padding-top: 100px;
+        width: 280px;
+        padding-left: 150px;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 50px;
+
+    }
 }
-}
+*/
 
 
 
@@ -540,10 +620,12 @@ footer {
     position: relative;
 
 }
-.block.main_image{
-    border:solid #707070;
+
+.block.main_image {
+    border: solid #707070;
     border-width: thin;
 }
+
 .main_image {
     height: 100%;
     width: auto;
@@ -589,62 +671,18 @@ footer {
     color: black;
 }
 
-.about{
-  display: grid;
-  grid-template-columns: 1fr;
-}
-.returns{
-  padding-top: 0px;
-   text-align: center;  
-}
-
-.picture1{
-    grid-column-start: 1;
-    grid-row-start: 1;
-    width:300px;
-    padding-left: 30px;
 
 
-}
-
-.text1{
-   grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 2;
-    padding-top: 40px;
-    padding-left: 0px;
-    width:300px;
-
+.returns {
     text-align: center;
 }
 
-.picture2{
-   grid-column-start: 1;
-    padding-top: 60px;
-     width:300px;
-    grid-row-start: 3;
+.returnsText {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    padding-bottom: 30px;
+}
 
-}
-.text2{
-    grid-column-start: 1;
-    grid-row-start: 4;
-    padding-top: 20px;
-    width:220px;
-    padding-left: 70px;
-}
-.text3{
-    grid-column-start: 1;
-    padding-left: 90px;
-    grid-row-start: 5;
-    padding-top: 20px;
-}
-.text4{
-  grid-column-start: 1;
-    grid-row-start: 6;
-    padding-top: 20px;
-    width:280px;
-    padding-left: 40px;
-}
 
 .buy_btn {
     width: 15%;
@@ -663,64 +701,3 @@ footer {
 
 }
 
-.FAQText {
-    margin-left: 20vw;
-    margin-right: 20vw; 
-}
-
-
-
-.picture1{
-    align-content: center;
-}
-
-.about{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 50px;
-
-}
-
-.picture1{
-    grid-column-start: 1;
-}
-
-.text1{
-   grid-column-start: 2;
-
-    display: block;
-}
-
-.red{
-    color: red;
-}
-.picture2{
-    display: block;
-
-}
-
-
-
-.two{
-    padding-left: 10px;
-}
-.three{
-    padding-left: 20px;
-
-   grid-column-start: 2;
-    display: block;
-    padding-top: 50px;
-}
-.text2{
-    grid-column-start: 1;
-    padding-top: 50px;
-}
-.text3{
-    grid-column-start: 1;
-    padding-top: 30px;
-}
-.text4{
-  grid-column-start: 2;
-    padding-top: 50px;
-
-}
