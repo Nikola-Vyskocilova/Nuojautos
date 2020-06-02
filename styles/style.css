@@ -465,9 +465,16 @@ a:hover {
         padding-left: 2em;
     }
 }
+/**senses and pure love pages*/
 
-/**footer........*/
+.gif {
+    padding-left: 7vw;
+    justify-self: center;
+    max-width: 85%;
+    height: auto;
+}
 
+/**footer*/
 
 input[type=text] {
     width: 25%;
