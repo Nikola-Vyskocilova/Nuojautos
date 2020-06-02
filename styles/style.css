@@ -141,7 +141,7 @@ a:hover {
 .title {
 
     font-family: "Work sans", sans-serif;
-    text-align: center;
+    text-align: left;
     color: #FFF;
     display: flex;
     flex-direction: column;
@@ -152,17 +152,16 @@ a:hover {
 }
 
 .title h1 {
-    /*	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);*/
-    background-image: url(../images/giphy.gif);
+    	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+/*    background-image: url(../images/giphy.gif);*/
     background-size: cover;
     color: transparent;
     -moz-background-clip: text;
     -webkit-background-clip: text;
-    font-size: 120px;
-    line-height: .75;
+    font-size: 100px;
+    line-height: .80;
     margin: 10px 0;
 }
-
 /*scroll down*/
 .arrow {
     position: absolute;
