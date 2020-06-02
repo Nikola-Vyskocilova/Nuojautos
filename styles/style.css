@@ -512,6 +512,7 @@ footer {
     border-top: 2px solid lightgray;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 60px;
 }
 
 
@@ -691,4 +692,11 @@ footer {
     width: 100%;
     font-weight: bold;
 
+}
+
+.gif{
+    padding-left: 7vw;
+    justify-self: center;
+    max-width: 85%;
+    height: auto;
 }
