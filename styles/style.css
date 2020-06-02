@@ -83,6 +83,7 @@ a:hover {
 }
 
 .grid-number {
+    position: relative;
     height: 450px;
     width: 300px;
     margin: auto;
@@ -94,14 +95,43 @@ a:hover {
     border-radius: 5px;
 }
 
+.grid-number a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.avoid-clicks {
+    pointer-events: none;
+}
+
 .t-shirt_image {
     max-height: 100%;
     max-width: 100%;
 }
 
-.t-shirt_price {
-    margin: 10px;
+.t-shirt_name {
+    color: black;
+    text-align: center;
+    font-weight: bolder;
 }
+
+.t-shirt_price {
+    color: black;
+    text-align: center;
+}
+
+.t-shirt_quote {
+    font-weight: lighter;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+
 
 .collectionImage {
     position: relative;
@@ -226,8 +256,9 @@ a:hover {
 .collections {
     background-color: #B7A5A0;
     text-align: center;
-    margin: auto;
+    padding-bottom: 50px;
 }
+
 .left {
     width: 5%;
     float: left;
@@ -236,13 +267,13 @@ a:hover {
 .collections h1,
 h2,
 h3 {
-padding-top: 20px;
-    color: black;
+    padding-top: 20px;
+    color: white;
 }
 
 .collections_container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto;
 }
 
 .collection-box {
@@ -261,7 +292,10 @@ padding-top: 20px;
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0; right: 0; bottom: 0; left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .centeredCollectionText {
@@ -292,7 +326,7 @@ padding-top: 20px;
 }
 
 .mirror_text p {
-    margin:0em;
+    margin: 0em;
 }
 
 .collections_side_text {
@@ -311,78 +345,18 @@ padding-top: 20px;
 }
 
 /**footer........*/
-.footer {
-    width: 100vw;
-    display: block;
-    overflow: hidden;
-    padding: 70px 0;
-    box-sizing: border-box;
-    background-color: aliceblue;
+
+
+input[type=text] {
+    width: 25%;
+    padding: 12px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: none;
+    border-top: none;
 }
 
-.inner_footer {
-    display: block;
-    margin: 0 auto;
-    width: 1100px;
-    height: 100%;
-
-}
-
-.inner_footer .logo_container {
-    width: 35%;
-    float: left;
-    height: 100%;
-    display: block;
-}
-
-.inner_footer .logo_container .footer_text {
-    width: 80px;
-    height: auto;
-}
-
-.inner_footer .footer_third {
-    width: calc(21.6666666667% - 20px);
-    margin-right: 10px;
-    float: left;
-    height: 100%;
-}
-
-.inner_footer .footer_third:last-child {
-    margin-right: 0;
-}
-
-.inner_footer .footer_third h1 {
-    font-size: 22px;
-    color: black;
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.inner_footer .footer_third a {
-    font-size: 18px;
-    color: black;
-    display: block;
-    font-weight: 200;
-    width: 100%;
-    margin-bottom: 5px;
-    background-color: black;
-}
-
-.container {
-
-  margin:0px;
-}
-
-input[type=text]  {
-  width: 25%;
-  padding: 12px;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  border-right: none;
-  border-top: none;
-}
-input[type=submit]{
+input[type=submit] {
     width: 15%;
     padding: 14px;
     background-color: white;
@@ -394,33 +368,32 @@ input[type=submit]{
 }
 
 input[type=submit]:hover {
-  font-weight: 700;
-  border-top: 2px solid black;
-  border-right: 2px solid black;
+    font-weight: 700;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
 }
 
 
 form {
-   grid-column-start: 2;
+    text-align: center;
+    grid-column-start: 2;
     grid-row-start: 1;
-    margin: 0px;
-    text-align: right;
     padding-right: 60px;
 }
 
-.newsletter{
+.newsletter {
     text-align: center;
-    padding-left: 140px;
 }
 
-footer{
-    padding-top: 30px;
+footer {
+    padding-top: 60px;
     border-top: 2px solid lightgray;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.navigation{
+
+.navigation {
     grid-column-start: 1;
 }
 
@@ -428,26 +401,26 @@ footer{
     grid-column-start: 1;
     list-style: none;
     padding-left: 60px;
-    width:30%;
+    width: 30%;
 }
 
-.footer_li a{
-  text-decoration: none;
-  color: black;
+.footer_li a {
+    text-decoration: none;
+    color: black;
 }
 
-.footer_li a:hover{
+.footer_li a:hover {
     text-decoration: underline;
 }
 
-.contact{
-   display: grid;
-   grid-area: column;
+.contact {
+    display: grid;
+    grid-area: column;
 }
 
-.delivery{
+.delivery {
     display: grid;
-   grid-area: column;
+    grid-area: column;
 }
 
 
@@ -503,59 +476,128 @@ footer{
 
 
 @media only screen and (max-width: 600px) {
-        footer{
-    padding-top: 30px;
-    border-top: 2px solid lightgray;
-    display: grid;
-    grid-template-columns: 1fr;
-}
+    footer {
+        padding-top: 30px;
+        border-top: 2px solid lightgray;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
     form {
-   grid-column-start: 1;
-    grid-row-start: 1;
-    justify-items: center;
-        width:80%;
-}
-    .newsletter{
-    text-align: center;
-    padding-right: 60px;
-
-}
-
-    input[type=text]  {
-  width: 35%;
-}
-input[type=submit]{
-    width: 30%;
-
-}
-
-.navigation{
-
-     padding-top: 60px;
-    grid-column-start: 1;
-    display: grid;
-    grid-row-start: 3;
-    text-align: center;
-    justify-items: center;
-}
-    li{
-    padding-left:0px;
-
-}
-    li a{
-  padding-top: 15px;
-}
-
-    .about{
-    display: grid;
-    grid-template-columns: 1fr;
-
-
-}
-    .returns{
-        padding-top: 0px;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        width: 100%;
     }
+
+    .newsletter {
+        text-align: center;
+    }
+
+    input[type=text] {
+        width: 35%;
+    }
+
+    input[type=submit] {
+        width: 30%;
+
+    }
+
+    .navigation {
+
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    li {
+        padding-left: 0px;
+
+    }
+
+    li a {
+        padding-top: 15px;
+    }
+}
+
+
+/*SINGLEPAGE CSS*/
+
+
+.single_image_container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 1em;
+    justify-content: center;
+    grid-column-gap: 40px;
+    padding: 30px;
+    grid-row-gap: 70px;
+    justify-items: center;
+
+
+}
+
+.block {
+    background: white;
+    position: relative;
+
+}
+.block.main_image{
+    border:solid #707070;
+    border-width: thin;
+}
+.main_image {
+    height: 100%;
+    width: auto;
+    border: 1px solid;
+    padding: 10px;
+    -webkit-box-shadow: -13px -12px 0px 0px rgba(192, 179, 174, 0.63);
+    -moz-box-shadow: -13px -12px 0px 0px rgba(192, 179, 174, 0.63);
+    box-shadow: -13px -12px 0px 0px rgba(192, 179, 174, 0.63);
+}
+
+.t-shirt_img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.description {
+    height: 100%;
+    width: 50%;
+    border: 1px solid;
+
+
+}
+
+.zoomed_image {
+    height: 100 %;
+    width: auto;
+
+
+}
+
+.zoomed_img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.shirt_description {
+    letter-spacing: 2px;
+}
+
+
+.shirt_name_bot {
+    color: black;
+}
+
+.about{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.returns{
+  padding-top: 0px;
+   text-align: center;  
+}
+
 .picture1{
     grid-column-start: 1;
     grid-row-start: 1;
@@ -604,18 +646,23 @@ input[type=submit]{
     padding-left: 40px;
 }
 
+.buy_btn {
+    width: 15%;
+    padding: 14px;
+    background-color: white;
+    color: black;
+    border-top: none;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: auto;
+    display: block;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+
 }
 
-.returns {
-
-  text-align: center;  
-}
-
-.returnsText {
-    margin-left: 20vw;
-    margin-right: 20vw;
-    padding-bottom: 30px;  
-}
 .FAQText {
     margin-left: 20vw;
     margin-right: 20vw; 

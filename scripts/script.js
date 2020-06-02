@@ -51,7 +51,7 @@ function createCollectionSections(collection) {
 }
 
 function getData() {
-    fetch("http://multidani.eu/shop/wp-json/wp/v2/t-shirt")
+    fetch("http://multidani.eu/shop/wp-json/wp/v2/t-shirt/?per_page=100")
         .then(res => res.json())
         .then(handleData)
 }
@@ -65,10 +65,16 @@ function showShirt(shirt) {
     const template = document.querySelector("template").content;
     const copy = template.cloneNode(true);
     copy.querySelector(".t-shirt_name").innerHTML = shirt.label;
-    copy.querySelector(".t-shirt_image").src = shirt.pictures.guid;
-    copy.querySelector(".t-shirt_quete").innerHTML = shirt.quote;
-    copy.querySelector(".t-shirt_price").innerHTML = shirt.price;
+    copy.querySelector(".t-shirt_image").src = shirt.pictures[0].guid;
+    copy.querySelector(".t-shirt_quote").innerHTML = shirt.quote;
+    copy.querySelector(".t-shirt_price").innerHTML = shirt.price + "€";
+    const a = document.createElement("a");
+    a.href = "singlepage.html?shirt_id=" + shirt.id;
+    copy.querySelector(".grid-number").appendChild(a);
 
+    if(shirt.collection_label === "aliens") {
+        copy.querySelector(".grid-number").classList.add("avoid-clicks");
+    }
 
     document.querySelector("." + shirt.collection_label).appendChild(copy);
 }

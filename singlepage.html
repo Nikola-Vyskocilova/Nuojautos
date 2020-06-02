@@ -15,49 +15,33 @@
         </div>
         <ul class="nav-bar-right">
             <li><a href="Store.html">Store</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#shooping_bag"><img class="shopping_icon" src="images/shopping-bag.png"></a></li>
 
         </ul>
     </nav>
-    <button onclick="topFunction()" id="topBtn" title="Go to top"><img src="images/arrowup.png" alt="top"></button>
 
-    <div class="title">
-        <h1>wear the love<br />share the love  <br />wear the love<br />share the love</h1>
-    </div>
-    <div class="arrow">
-        <span></span>
-    </div>
-
-    <video controls id="myVideo" width="100%" height="auto" preload="auto" loop autoplay>
-        <source src="images/video_nuojautos.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-
-    <div class="arrow">
-        <span></span>
-    </div>
-
-    <div class="collections">
-
-        <h2> T-shirts led by our intuition, created with pure love </h2>
-        <div class="collections_container right">
+    <div class="single_image_container">
+        <div class="block main_image">
+            <img class="t-shirt_img">
         </div>
-
-    </div>
-
-    <template>
-        <div class="collection-box">
-            <img class="collection-img">
-            <div class="centeredCollectionText">
-                <h1 class="year_text">Years</h1>
-                <div class="mirror_text">
-                    <p class="name_text">CollectionName</p>
-                    <p class="upsidown_text">UpsidownText</p>
-                </div>
+        <div class="block description">
+           <div style="background-color: antiquewhite">
+            <img class="collection_img">
+            <h3 class="shirt_name_top">Name</h3>
             </div>
+            <p class="shirt_quote"></p>
+            <div class="shirt_description"></div>
         </div>
-    </template>
+        <div class="block zoomed_image">
+            <img class="zoomed_img">
+        </div>
+        <div class="block order_box">
+            <h3 class="shirt_name_bot">Name</h3>
+            <p class="shirt_price"></p>
+            <button class="buy_btn">Buy Now</button>
+        </div>
+    </div>
 
     <footer>
         <section class="navigation">
@@ -88,9 +72,7 @@
         </form>
     </footer>
 
-    <script src="scripts/script.js">
-    </script>
-    <script src="scripts/script2.js">
+    <script src="scripts/singlePage.js">
     </script>
 </body></html>
 <link rel="stylesheet" href="styles/style.css">
