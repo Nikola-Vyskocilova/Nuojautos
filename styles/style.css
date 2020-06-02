@@ -258,7 +258,7 @@ a:hover {
 .collections {
     background-color: #B7A5A0;
     text-align: center;
-    margin: auto;
+    padding-bottom: 50px;
 }
 
 .left {
@@ -275,7 +275,7 @@ h3 {
 
 .collections_container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto;
 }
 
 .collection-box {
@@ -347,68 +347,7 @@ h3 {
 }
 
 /**footer........*/
-.footer {
-    width: 100vw;
-    display: block;
-    overflow: hidden;
-    padding: 70px 0;
-    box-sizing: border-box;
-    background-color: aliceblue;
-}
 
-.inner_footer {
-    display: block;
-    margin: 0 auto;
-    width: 1100px;
-    height: 100%;
-
-}
-
-.inner_footer .logo_container {
-    width: 35%;
-    float: left;
-    height: 100%;
-    display: block;
-}
-
-.inner_footer .logo_container .footer_text {
-    width: 80px;
-    height: auto;
-}
-
-.inner_footer .footer_third {
-    width: calc(21.6666666667% - 20px);
-    margin-right: 10px;
-    float: left;
-    height: 100%;
-}
-
-.inner_footer .footer_third:last-child {
-    margin-right: 0;
-}
-
-.inner_footer .footer_third h1 {
-    font-size: 22px;
-    color: black;
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.inner_footer .footer_third a {
-    font-size: 18px;
-    color: black;
-    display: block;
-    font-weight: 200;
-    width: 100%;
-    margin-bottom: 5px;
-    background-color: black;
-}
-
-.container {
-
-    margin: 0px;
-}
 
 input[type=text] {
     width: 25%;
@@ -438,24 +377,23 @@ input[type=submit]:hover {
 
 
 form {
+    text-align: center;
     grid-column-start: 2;
     grid-row-start: 1;
-    margin: 0px;
-    text-align: right;
     padding-right: 60px;
 }
 
 .newsletter {
     text-align: center;
-    padding-left: 140px;
 }
 
 footer {
-    padding-top: 30px;
+    padding-top: 60px;
     border-top: 2px solid lightgray;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
 
 .navigation {
     grid-column-start: 1;
@@ -498,14 +436,11 @@ footer {
     form {
         grid-column-start: 1;
         grid-row-start: 1;
-        justify-items: center;
-        width: 80%;
+        width: 100%;
     }
 
     .newsletter {
         text-align: center;
-        padding-right: 60px;
-
     }
 
     input[type=text] {
@@ -520,11 +455,7 @@ footer {
     .navigation {
 
         padding-top: 60px;
-        grid-column-start: 1;
-        display: grid;
-        grid-row-start: 3;
         text-align: center;
-        justify-items: center;
     }
 
     li {
@@ -537,21 +468,6 @@ footer {
     }
 }
 
-.returns {
-    padding-top: 15vh;
-    text-align: center;
-}
-
-.returnsText {
-    margin-left: 20vw;
-    margin-right: 20vw;
-    padding-bottom: 30px;
-}
-
-.FAQText {
-    margin-left: 20vw;
-    margin-right: 20vw;
-}
 
 /*SINGLEPAGE CSS*/
 
@@ -625,20 +541,6 @@ footer {
     color: black;
 }
 
-.add_btn {
-    width: 25%;
-    padding: 12px;
-    background-color: white;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-top: none;
-    position: absolute;
-    top: 50%;
-    display: block;
-    width: 100%;
-    font-weight: bold;
-}
 
 .buy_btn {
     width: 15%;
