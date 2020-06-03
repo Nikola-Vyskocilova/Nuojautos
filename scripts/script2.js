@@ -18,7 +18,7 @@ function createCollectionSections(collection) {
     //copy.querySelector(".centeredCollectionText").innerHTML = collection.year + "<br>" + collection.name + "<br>" + collection.name;
     copy.querySelector(".collection-img").src = collection.collection_hover_image.guid;
     const a = document.createElement("a");
-    a.href = "Store.html#" + collection.slug;
+    a.href = "pure-love.html#" + collection.slug;
     copy.querySelector(".collection-box").appendChild(a);
     document.querySelector(".collections_container").appendChild(copy);
 

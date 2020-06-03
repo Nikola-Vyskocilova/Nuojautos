@@ -177,6 +177,7 @@ a:hover {
     justify-content: center;
     height: 100vh;
     letter-spacing: 1px;
+
 }
 
 .title h1 {
@@ -194,7 +195,6 @@ a:hover {
 /*scroll down*/
 .arrow {
     position: absolute;
-    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -256,6 +256,7 @@ a:hover {
     background-color: #B7A5A0;
     text-align: center;
     padding-bottom: 50px;
+
 }
 
 .left {
@@ -464,6 +465,18 @@ a:hover {
         float: none;
         padding-left: 2em;
     }
+    .title h1 {
+    font-size: 100px;
+
+}
+    .title {
+    height: 100vh;
+
+
+}
+    .arrow {
+    top: 90%;
+}
 }
 
 /**footer........*/
@@ -589,6 +602,18 @@ footer {
     li a {
         padding-top: 15px;
     }
+     .title h1 {
+    font-size: 45px;
+         margin: auto;
+    }
+     .title {
+    height: 45vh;
+
+
+}
+     .arrow {
+    top: 60%;
+}
 }
 
 
