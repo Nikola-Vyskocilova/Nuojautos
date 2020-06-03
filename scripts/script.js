@@ -7,7 +7,7 @@ function init() {
 }
 
 function getCollections() {
-    fetch("http://multidani.eu/shop/wp-json/wp/v2/collection")
+    fetch("https://multidani.eu/shop/wp-json/wp/v2/collection")
         .then(res => res.json())
         .then(handleCollections)
 }
@@ -51,10 +51,10 @@ function createCollectionSections(collection) {
 }
 
 function getData() {
-    fetch("http://multidani.eu/shop/wp-json/wp/v2/t-shirt?_embed&per_page=5")
+    fetch("https://multidani.eu/shop/wp-json/wp/v2/t-shirt?_embed&per_page=5")
         .then(res => res.json())
         .then(handleData)
-        .then(fetch("http://multidani.eu/shop/wp-json/wp/v2/t-shirt?_embed&offset=5&per_page=100")
+        .then(fetch("https://multidani.eu/shop/wp-json/wp/v2/t-shirt?_embed&offset=5&per_page=100")
         .then(res => res.json())
         .then(handleData))
 }
