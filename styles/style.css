@@ -873,3 +873,7 @@ a{
     font-size: 18px;
     text-align: center;
 }
+.some{
+    padding-top: 6px;
+    word-spacing: 10px;
+}
