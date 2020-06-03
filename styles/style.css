@@ -81,17 +81,18 @@ a:hover {
     background-color: white;
     justify-content: center;
 }
+
 @media only screen and (max-width: 900px) {
     .grid-wrapper {
-    display: block;
-    grid-template-columns: 1fr 1fr 1fr;
-    /*    grid-auto-rows: minmax(100px, auto);*/
-    grid-column-gap: 1px;
-    grid-row-gap: 1px;
-    margin: 1em;
-    background-color: white;
-    justify-content: center;
-}
+        display: block;
+        grid-template-columns: 1fr 1fr 1fr;
+        /*    grid-auto-rows: minmax(100px, auto);*/
+        grid-column-gap: 1px;
+        grid-row-gap: 1px;
+        margin: 1em;
+        background-color: white;
+        justify-content: center;
+    }
 }
 
 .grid-number {
@@ -271,6 +272,7 @@ a:hover {
     margin-bottom: 50px;
     padding-top: 15px;
 }
+
 .collections_header {
     color: white;
 }
@@ -390,6 +392,20 @@ a:hover {
 .moto1 {
     flex-grow: 1;
     padding-top: 6em;
+    animation: an 1s ease-out 1 both;
+    display: inline-block;
+}
+
+@keyframes an {
+    from {
+        opacity: 0;
+        transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: perspective(500px) translate3d(0, 0, 0);
+    }
 
 }
 
@@ -397,6 +413,8 @@ a:hover {
     flex-grow: 1;
     padding-left: 4em;
     padding-top: 6em;
+    animation: an 1s ease-out 1 both;
+    display: inline-block;
 }
 
 .picture_box img {
@@ -480,16 +498,19 @@ a:hover {
         float: none;
         padding-left: 2em;
     }
+
     .title h1 {
-    font-size: 100px;
+        font-size: 100px;
 
-}
+    }
+
     .title {
-    height: 100vh;
+        height: 100vh;
 
 
+    }
 }
-}
+
 /**senses and pure love pages*/
 
 .gif {
@@ -498,18 +519,20 @@ a:hover {
     max-width: 85%;
     height: auto;
 }
+
 .sensesText {
     max-width: 50vW;
     text-align: center;
     padding-left: 25vw;
 }
-.link{
+
+.link {
     border-bottom: 2px solid black;
     border-left: 2px solid black;
     border-right: 2px solid black;
     border-top: none;
     font-size: 20px;
-    width:140px;
+    width: 140px;
     text-align: center;
     margin: auto;
     margin-top: 30px;
@@ -517,17 +540,18 @@ a:hover {
 
 }
 
-.link:hover{
-    width:150px;
+.link:hover {
+    width: 150px;
     font-size: 22px;
     font-weight: 400;
 
 }
 
-a{
+a {
     color: black;
     text-decoration: none;
 }
+
 /**footer*/
 
 input[type=text] {
@@ -650,23 +674,27 @@ footer {
     li a {
         padding-top: 15px;
     }
-     .title h1 {
-    font-size: 45px;
-         margin: auto;
+
+    .title h1 {
+        font-size: 45px;
+        margin: auto;
     }
-     .title {
-    height: 45vh;
+
+    .title {
+        height: 45vh;
 
 
-}
-     .arrow {
-    top: 57%;
-}
+    }
+
+    .arrow {
+        top: 57%;
+    }
+
     #topBtn {
-    right: 70px;
+        right: 70px;
 
 
-}
+    }
 }
 
 
@@ -832,20 +860,21 @@ footer {
     margin-right: 20vw;
     padding-bottom: 30px;
 }
-.gif{
+
+.gif {
     padding-left: 7vw;
     justify-self: center;
     max-width: 85%;
     height: auto;
 }
 
-.link{
+.link {
     border-bottom: 2px solid black;
     border-left: 2px solid black;
     border-right: 2px solid black;
     border-top: none;
     font-size: 20px;
-    width:140px;
+    width: 140px;
     text-align: center;
     margin: auto;
     margin-top: 50px;
@@ -854,20 +883,20 @@ footer {
 
 }
 
-.link:hover{
-    width:150px;
+.link:hover {
+    width: 150px;
     font-size: 22px;
     font-weight: 400;
 
 }
 
-a{
+a {
     color: black;
     text-decoration: none;
 }
 
-.pure{
-    width:72vw;
+.pure {
+    width: 72vw;
     padding-top: 50px;
     margin: auto;
     font-size: 18px;
