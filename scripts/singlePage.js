@@ -9,7 +9,7 @@ function getData() {
     const shirt_id = urlParams.get("shirt_id");
 
 
-    fetch("http://multidani.eu/shop/wp-json/wp/v2/t-shirt/" + shirt_id)
+    fetch("https://multidani.eu/shop/wp-json/wp/v2/t-shirt/" + shirt_id)
         .then(res => res.json())
         .then(showShirt)
 
@@ -34,7 +34,7 @@ function showShirt(shirt) {
         document.querySelector(".btns").style.display = 'none';
     }
 
-    document.querySelector(".description").style.backgroundImage = "url('../images/" + shirt.collection_label + ".jpg')";
+    document.querySelector(".description").style.backgroundImage = "url('images/" + shirt.collection_label + ".jpg')";
 }
 
 function changeShirtColor() {
