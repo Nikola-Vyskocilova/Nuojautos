@@ -195,6 +195,7 @@ a:hover {
 /*scroll down*/
 .arrow {
     position: absolute;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -474,9 +475,6 @@ a:hover {
 
 
 }
-    .arrow {
-    top: 90%;
-}
 }
 
 /**footer........*/
@@ -612,7 +610,7 @@ footer {
 
 }
      .arrow {
-    top: 60%;
+    top: 57%;
 }
 }
 
