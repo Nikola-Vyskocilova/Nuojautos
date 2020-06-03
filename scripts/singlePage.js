@@ -34,7 +34,7 @@ function showShirt(shirt) {
         document.querySelector(".btns").style.display = 'none';
     }
 
-    document.querySelector(".description").style.backgroundImage = "url('../images/" + shirt.collection_label + ".jpg')";
+    document.querySelector(".description").style.backgroundImage = "url('images/" + shirt.collection_label + ".jpg')";
 }
 
 function changeShirtColor() {
