@@ -9,7 +9,7 @@ function getData() {
     const shirt_id = urlParams.get("shirt_id");
 
 
-    fetch("http://multidani.eu/shop/wp-json/wp/v2/t-shirt/" + shirt_id)
+    fetch("https://multidani.eu/shop/wp-json/wp/v2/t-shirt/" + shirt_id)
         .then(res => res.json())
         .then(showShirt)
 
