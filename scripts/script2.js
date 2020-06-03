@@ -1,5 +1,5 @@
 function getCollections() {
-    fetch("http://multidani.eu/shop/wp-json/wp/v2/collection")
+    fetch("https://multidani.eu/shop/wp-json/wp/v2/collection")
         .then(res => res.json())
         .then(handleCollections)
 }
