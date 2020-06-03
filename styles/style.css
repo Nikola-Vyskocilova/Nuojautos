@@ -546,6 +546,7 @@ footer {
     border-top: 2px solid lightgray;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 60px;
 }
 
 
@@ -707,7 +708,6 @@ footer {
     padding-bottom: 30px;
 }
 
-
 .buy_btn {
     width: 15%;
     padding: 14px;
@@ -723,4 +723,46 @@ footer {
     width: 100%;
     font-weight: bold;
 
+}
+
+.gif{
+    padding-left: 7vw;
+    justify-self: center;
+    max-width: 85%;
+    height: auto;
+}
+
+.link{
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: none;
+    font-size: 20px;
+    width:140px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+}
+
+.link:hover{
+    width:150px;
+    font-size: 22px;
+    font-weight: 400;
+
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.pure{
+    width:72vw;
+    padding-top: 50px;
+    margin: auto;
+    font-size: 18px;
+    text-align: center;
 }
