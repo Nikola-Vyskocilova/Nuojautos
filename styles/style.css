@@ -256,6 +256,8 @@ a:hover {
     background-color: #B7A5A0;
     text-align: center;
     padding-bottom: 50px;
+    margin-bottom: 50px;
+    padding-top: 15px;
 }
 
 .left {
@@ -277,6 +279,7 @@ a:hover {
     position: relative;
     text-align: center;
     margin: auto;
+
 }
 
 .collection-box img {
