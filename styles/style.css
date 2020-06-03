@@ -683,7 +683,17 @@ footer {
 
 
 }
+    .nav-bar-right{
+        padding-right: 70px;
+    text-align: center;
+    display: grid;
+    }
+
+    nav li {
+       padding-top: 15px;
+    }
 }
+
 
 
 /*SINGLEPAGE CSS*/
