@@ -710,8 +710,8 @@ footer {
     width:140px;
     text-align: center;
     margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
 
 }
@@ -728,4 +728,11 @@ a{
     text-decoration: none;
 }
 
+.pure{
+    width:72vw;
+    padding-top: 50px;
+    margin: auto;
+    font-size: 18px;
+    text-align: center;
+}
 
