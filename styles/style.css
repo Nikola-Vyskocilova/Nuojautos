@@ -270,6 +270,9 @@ a:hover {
     margin-bottom: 50px;
     padding-top: 15px;
 }
+.collections_header {
+    color: white;
+}
 
 .left {
     width: 5%;
