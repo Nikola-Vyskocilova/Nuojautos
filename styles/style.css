@@ -1,0 +1,895 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+body {
+    font-family: "Work sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+nav {
+    width: 100%;
+    background: white;
+    overflow: auto;
+    border-bottom: 2px solid lightgray;
+}
+
+li {
+    float: left;
+}
+
+.logo img {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: darkgrey;
+    text-align: center;
+
+}
+
+a:hover {
+    color: black;
+}
+
+.nav-bar-left {
+    padding: 1em 0em 0em 3em;
+    float: left;
+}
+
+.nav-bar-right {
+    padding-top: 0.5em;
+    float: right;
+    list-style: none;
+}
+
+.nav-bar-right a {
+    padding-right: 4em;
+}
+
+.home_btn {
+    font-size: 30px;
+}
+
+.shopping_icon {
+    width: 30px;
+    height: 30px;
+}
+
+.side_text {
+    font-size: 2em;
+    transform: rotate(270deg);
+    transform-origin: left top 0;
+    padding: 9px;
+    bottom: 0;
+    color: gray;
+    position: absolute;
+    margin: 0em;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*    grid-auto-rows: minmax(100px, auto);*/
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    margin: 1em;
+    background-color: white;
+    justify-content: center;
+}
+@media only screen and (max-width: 900px) {
+    .grid-wrapper {
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*    grid-auto-rows: minmax(100px, auto);*/
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    margin: 1em;
+    background-color: white;
+    justify-content: center;
+}
+}
+
+.grid-number {
+    position: relative;
+    height: 450px;
+    width: 300px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    font-size: px;
+    color: black;
+    line-height: 1;
+    border-radius: 5px;
+}
+
+.grid-number a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.avoid-clicks {
+    pointer-events: none;
+}
+
+.t-shirt_image {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.t-shirt_name {
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.t-shirt_price {
+    color: black;
+    text-align: center;
+}
+
+.t-shirt_quote {
+    font-weight: lighter;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+
+
+.collectionImage {
+    position: relative;
+    text-align: center;
+    height: 100px;
+
+}
+
+.collectionImage img {
+    object-fit: cover;
+    width: 90%;
+    height: 100%;
+}
+
+.centeredText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 25px;
+}
+
+.centeredQuote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 13px;
+    font-weight: lighter;
+
+}
+
+/** main page*/
+
+.title {
+    text-align: left;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    letter-spacing: 1px;
+
+}
+
+.title h1 {
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 100px;
+    line-height: .80;
+    margin: 10px 0;
+}
+
+/*scroll down*/
+.arrow {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.arrow span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid #B7A69F;
+    border-right: 5px solid #B7A69F;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    -webkit-box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.75);
+    z-index: 99;
+
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background-color: var(--white);
+    cursor: pointer;
+    font-size: 18px;
+    margin: 30px 0px;
+    display: none;
+    transition: .5s;
+}
+
+#topBtn:hover {
+    filter: invert(100%);
+}
+
+.collections {
+    background-color: #B7A5A0;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    padding-top: 15px;
+}
+.collections_header {
+    color: white;
+}
+
+.left {
+    width: 5%;
+    float: left;
+}
+
+.collections h2 h3 {
+    padding-top: 20px;
+    color: white;
+}
+
+.collections_container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.collection-box {
+    position: relative;
+    text-align: center;
+    margin: auto;
+
+}
+
+.collection-box img {
+    object-fit: cover;
+    width: 95%;
+    height: 400px;
+}
+
+.collection-box a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.centeredCollectionText {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+.year_text {
+    font-size: 50px;
+    color: white;
+}
+
+.name_text {
+    font-size: 30px;
+    font-weight: 100;
+    color: white;
+}
+
+.upsidown_text {
+    text-align: center;
+    font-size: 20px;
+    transform: rotate(180deg);
+    font-weight: lighter;
+    color: white;
+    opacity: 65%;
+}
+
+.mirror_text p {
+    margin: 0em;
+}
+
+.collections_side_text {
+    font-size: 2em;
+    transform: rotate(270deg);
+    margin-top: 10%;
+
+}
+
+/*
+/*FAQPage................*/
+
+.faq_container h3 {
+    font-size: 1em;
+    padding-top: 50px;
+    margin: 10% 20% 10% 20%;
+}
+
+
+.FAQText {
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+/*About page*/
+.aboutHeader {
+    color: #707070;
+}
+
+.about_container {
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr 1fr;
+
+}
+
+.container_item_1 {
+    display: flex;
+    margin: 0;
+}
+
+.picture_box {
+    width: 60%;
+    padding-left: 5em;
+}
+
+.moto1 {
+    flex-grow: 1;
+    padding-top: 6em;
+    animation: an 1s ease-out 1 both;
+    display: inline-block;
+}
+
+@keyframes an {
+    from {
+        opacity: 0;
+        transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: perspective(500px) translate3d(0, 0, 0);
+    }
+
+}
+
+.moto2 {
+    flex-grow: 1;
+    padding-left: 5em;
+    padding-top: 6em;
+    animation: an 3s ease-out 1 both;
+    display: inline-block;
+}
+
+.picture_box img {
+    max-width: 90%;
+    height: auto;
+
+}
+
+.about_container h3 {
+    color: #707070;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.text1 {
+    padding-left: 5em;
+}
+
+.text2 {
+    float: right;
+    padding-right: 7em;
+}
+
+.red {
+    color: #E27665;
+}
+
+.tabbed {
+    padding-left: 1em;
+}
+
+.double_tabbed {
+    padding-left: 2em;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .about_container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    }
+
+    .container_item_1 {
+        margin: 0;
+    }
+
+    .picture_box {
+        width: 90%;
+        padding-left: 0em;
+    }
+
+    .moto1 {
+        padding-top: 0em;
+
+    }
+
+    .moto2 {
+        padding-left: 0em;
+        padding-top: 0em;
+    }
+
+
+    .picture_box img {
+        max-width: 90%;
+        height: auto;
+
+    }
+
+    .about_container h3 {
+        color: #707070;
+        font-size: 25px;
+        font-weight: 100;
+    }
+
+    .text1 {
+        padding-left: 2em;
+    }
+
+    .text2 {
+        float: none;
+        padding-left: 2em;
+    }
+    .title h1 {
+    font-size: 100px;
+
+}
+    .title {
+    height: 100vh;
+
+
+}
+}
+/**senses and pure love pages*/
+
+.gif {
+    padding-left: 7vw;
+    justify-self: center;
+    max-width: 85%;
+    height: auto;
+}
+.sensesText {
+    max-width: 50vW;
+    text-align: center;
+    padding-left: 25vw;
+}
+.link{
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: none;
+    font-size: 20px;
+    width:140px;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.link:hover{
+    width:150px;
+    font-size: 22px;
+    font-weight: 400;
+
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+/**footer*/
+
+input[type=text] {
+    width: 25%;
+    padding: 12px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: none;
+    border-top: none;
+}
+
+input[type=submit] {
+    width: 15%;
+    padding: 14px;
+    background-color: white;
+    color: black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: none;
+    border-bottom: none;
+}
+
+input[type=submit]:hover {
+    font-weight: 700;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+}
+
+
+form {
+    text-align: center;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    padding-right: 60px;
+}
+
+.newsletter {
+    text-align: center;
+}
+
+footer {
+    padding-top: 60px;
+    border-top: 2px solid lightgray;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 60px;
+}
+
+
+.navigation {
+    grid-column-start: 1;
+}
+
+.footer_li {
+    grid-column-start: 1;
+    list-style: none;
+    padding-left: 60px;
+    width: 30%;
+}
+
+.footer_li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer_li a:hover {
+    text-decoration: underline;
+}
+
+.contact {
+    display: grid;
+    grid-area: column;
+}
+
+.delivery {
+    display: grid;
+    grid-area: column;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    footer {
+        padding-top: 30px;
+        border-top: 2px solid lightgray;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        width: 100%;
+    }
+
+    .newsletter {
+        text-align: center;
+    }
+
+    input[type=text] {
+        width: 35%;
+    }
+
+    input[type=submit] {
+        width: 30%;
+
+    }
+
+    .navigation {
+
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    li {
+        padding-left: 0px;
+
+    }
+
+    li a {
+        padding-top: 15px;
+    }
+     .title h1 {
+    font-size: 45px;
+         margin: auto;
+    }
+     .title {
+    height: 45vh;
+
+
+}
+     .arrow {
+    top: 57%;
+}
+    #topBtn {
+    right: 70px;
+
+
+}
+}
+
+
+/*SINGLEPAGE CSS*/
+
+
+.single_image_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50vh 50vh;
+    margin: 0em;
+    padding: 30px;
+    padding-left: 50px;
+    grid-column-gap: 1px;
+    grid-row-gap: 100px;
+}
+
+.block {
+    background: white;
+}
+
+.block.main_image {
+    border: solid #707070;
+    border-width: thin;
+}
+
+.main_image {
+    height: 100%;
+    width: auto;
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+    -webkit-box-shadow: -13px -12px 0px 0px rgba(192, 179, 174, 0.63);
+    -moz-box-shadow: -13px -12px 0px 0px rgba(192, 179, 174, 0.63);
+    box-shadow: -13px -12px 0px 0px rgba(192, 179, 174, 0.63);
+}
+
+.t-shirt_img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.description {
+    float: left;
+    width: 90%;
+    border: solid #707070;
+    border-width: thin;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+}
+
+.shirt_description {
+    height: 100%;
+    padding-left: 1em;
+    letter-spacing: 2px;
+    background-color: white;
+    opacity: 70%;
+}
+
+.zoomed_image {
+    text-align: center;
+    height: 100%;
+    width: auto;
+}
+
+.zoomed_img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.shirt_quote {
+    color: #707070;
+    text-align: center;
+}
+
+.shirt_name_top {
+    color: whitesmoke;
+    font-weight: thin;
+    text-align: center;
+}
+
+.shirt_name_bot {
+    color: black;
+}
+
+.btns {
+    padding-top: 10px;
+}
+
+.black_btn {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid dimgray;
+    background-color: dimgray;
+}
+
+.white_btn {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid dimgray;
+    background-color: white;
+}
+
+.order_box {
+    width: 90%;
+}
+
+.shirt_info {
+    width: 34%;
+}
+
+.shirt_price {
+    font-size: 25px;
+}
+
+.customization {
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.right-box {
+    width: 40%;
+    float: right;
+}
+
+.shirt_sizes {
+    padding: 10px;
+}
+
+.buy_btn {
+    width: 40%;
+    padding: 14px;
+    background-color: white;
+    color: black;
+    border-top: none;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-left: 15%;
+    display: block;
+    font-weight: bold;
+
+}
+
+@media only screen and (max-width: 900px) {
+    .single_image_container {
+        display: block;
+
+    }
+}
+
+/*Other misc pages*/
+
+.returns {
+    text-align: center;
+}
+
+.returnsText {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    padding-bottom: 30px;
+}
+.gif{
+    padding-left: 7vw;
+    justify-self: center;
+    max-width: 85%;
+    height: auto;
+}
+
+.link{
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: none;
+    font-size: 20px;
+    width:140px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+}
+
+.link:hover{
+    width:150px;
+    font-size: 22px;
+    font-weight: 400;
+
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.pure{
+    width:72vw;
+    padding-top: 50px;
+    margin: auto;
+    font-size: 18px;
+    text-align: center;
+}
+.some{
+    padding-top: 6px;
+    word-spacing: 10px;
+}
