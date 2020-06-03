@@ -72,9 +72,5 @@ function showShirt(shirt) {
     a.href = "singlepage.html?shirt_id=" + shirt.id;
     copy.querySelector(".grid-number").appendChild(a);
 
-    if(shirt.collection_label === "aliens") {
-        copy.querySelector(".grid-number").classList.add("avoid-clicks");
-    }
-
     document.querySelector("." + shirt.collection_label).appendChild(copy);
 }

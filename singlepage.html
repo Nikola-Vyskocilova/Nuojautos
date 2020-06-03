@@ -24,21 +24,49 @@
     <div class="single_image_container">
         <div class="block main_image">
             <img class="t-shirt_img">
+            <div class="btns">
+                <button class="black_btn" onclick="changeShirtColor()"></button>
+                <button class="white_btn" onclick="changeShirtColor()"></button>
+            </div>
+
         </div>
         <div class="block description">
-           <div style="background-color: antiquewhite">
-            <img class="collection_img">
-            <h3 class="shirt_name_top">Name</h3>
+            <div class="name-box">
+                <h3 class="shirt_name_top">Name</h3>
             </div>
-            <p class="shirt_quote"></p>
-            <div class="shirt_description"></div>
+            <div class="shirt_description">
+                <p class="shirt_quote"></p>
+
+            </div>
         </div>
         <div class="block zoomed_image">
             <img class="zoomed_img">
         </div>
         <div class="block order_box">
-            <h3 class="shirt_name_bot">Name</h3>
-            <p class="shirt_price"></p>
+            <div class="shirt_info">
+                <h3 class="shirt_name_bot">Name</h3>
+                <p class="shirt_price"></p>
+                <hr>
+            </div>
+            <div class="customization">
+                <div class="right-box">
+                    Size <br>
+                    <select name="sizes" class="shirt_sizes">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                </div>
+                <div class="left-box">
+
+                    Color <br>
+                    <button class="black_btn" onclick="changeShirtColor()"></button>
+                    <button class="white_btn" onclick="changeShirtColor()"></button>
+                    <br>
+                </div>
+            </div>
+
             <button class="buy_btn">Buy Now</button>
         </div>
     </div>
@@ -74,6 +102,8 @@
 
     <script src="scripts/singlePage.js">
     </script>
-</body></html>
+</body>
+
+</html>
 <link rel="stylesheet" href="styles/style.css">
 <script src="styles/style.css"></script>
