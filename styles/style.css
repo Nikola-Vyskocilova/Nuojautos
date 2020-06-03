@@ -903,3 +903,7 @@ a{
     padding-top: 6px;
     word-spacing: 10px;
 }
+
+h3.FAQText{
+    text-align: center;
+}
