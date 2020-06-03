@@ -381,8 +381,6 @@ a:hover {
     padding-top: 6em;
 }
 
-.container_item_2 {}
-
 .picture_box img {
     max-width: 90%;
     height: auto;
@@ -465,9 +463,45 @@ a:hover {
         padding-left: 2em;
     }
 }
+/**senses and pure love pages*/
 
-/**footer........*/
+.gif {
+    padding-left: 7vw;
+    justify-self: center;
+    max-width: 85%;
+    height: auto;
+}
+.sensesText {
+    max-width: 50vW;
+    text-align: center;
+    padding-left: 25vw;
+}
+.link{
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: none;
+    font-size: 20px;
+    width:140px;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
+}
+
+.link:hover{
+    width:150px;
+    font-size: 22px;
+    font-weight: 400;
+
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+/**footer*/
 
 input[type=text] {
     width: 25%;
@@ -643,10 +677,8 @@ footer {
 }
 
 .zoomed_image {
-    height: 100 %;
+    height: 100%;
     width: auto;
-
-
 }
 
 .zoomed_img {
