@@ -409,7 +409,7 @@ a:hover {
 
 .moto2 {
     flex-grow: 1;
-    padding-left: 4em;
+    padding-left: 5em;
     padding-top: 6em;
     animation: an 3s ease-out 1 both;
     display: inline-block;
